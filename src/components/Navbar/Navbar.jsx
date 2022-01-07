@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Navbar.module.css';
-console.log(classes);
+//console.log(classes);
 
 //класс 1 сидит в одной переменной.
 //let class1 = "item";
@@ -19,27 +19,27 @@ console.log(classes);
 const Navbar = () => {
 return  <nav className={classes.nav}>
         <div className={classes.item}>
-            <a>
+            <a href="/profile">
                 Profile
             </a>
         </div>
         <div className={`${classes.item} ${classes.active}`}>
-            <a>
+            <a href="/dialogs">
                 Messages
             </a>
         </div>
         <div className={classes.item}>
-            <a>
+            <a href="/news">
                 News
             </a>
         </div>
         <div className={classes.item}>
-            <a>
+            <a href="/music">
                 Music
             </a>
         </div>
         <div className={classes.item}>
-            <a>
+            <a href="/settings">
                 Settings
             </a>
         </div>
