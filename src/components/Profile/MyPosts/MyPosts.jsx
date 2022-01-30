@@ -28,7 +28,6 @@ const MyPosts = (props) => {
             </div>
             <div className={classes.posts}>
                 {postsElements}
-                {props.hey}
 
             </div>
         </div>

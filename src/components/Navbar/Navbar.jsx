@@ -51,7 +51,6 @@ const Navbar = () => {
                     Settings
                 </NavLink>
             </div>
-
         </nav>
     )
 }
