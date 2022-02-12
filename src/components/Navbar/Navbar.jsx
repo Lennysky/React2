@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
+import Friend from "../Friends/Friend/Friend";
 //console.log(classes);
 
 //класс 1 сидит в одной переменной.
@@ -23,7 +24,12 @@ const dynamicClassName = () => {
 }
 
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+    let friendsElements =
+        props.state.friends.map (f => <Friend friend = {f.friend} />);
+
+
     return (
         <nav className={classes.nav}>
             <div className={classes.item}>
@@ -51,6 +57,14 @@ const Navbar = () => {
                     Settings
                 </NavLink>
             </div>
+            <div className={classes.item}>
+                <NavLink to="/friends" className = {dynamicClassName()}>
+                    Friends
+                </NavLink>
+            </div>
+
+            <div>{friendsElements}</div>
+
         </nav>
     )
 }
