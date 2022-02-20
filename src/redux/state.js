@@ -30,7 +30,6 @@ let state = {
             {id: 1, friend: "Dima"}
         ]
     }
-
 }
 
 export default state;
